@@ -22,7 +22,7 @@ export const ViewManager = {
         const playerView = document.getElementById('visualiser-box');
         const uploadView = document.getElementById('upload');
 
-        if (window.location.hash === '#/') {
+        if (window.location.hash === '#/' || window.location.hash === '') {
             playerView.classList.remove('hidden');
             uploadView.classList.add('hidden');
         } else {
